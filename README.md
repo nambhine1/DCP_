@@ -1,5 +1,5 @@
 # DCP_
-This tutorial is used to build an applicaiton program for the enhancement of night time uing Dark Channel Prior and OpenCL
+This tutorial is used to build an applicaiton program for the enhancement of night time using Dark Channel Prior and OpenCV
 
 The main code is available in this so if you want to run the application code make sure that you have installed the opencv in your environment otherwise you can not run this program
 
