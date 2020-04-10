@@ -7,7 +7,7 @@ Thats why we use an enhancement algorithm to solve the problem of low contraste 
 
 In this tutorial we build an applicaiton program for the enhancement of night time using Dark Channel Prior and OpenCV running in software means CPU, the elapse output time of the algorithm push us to use  a hardware accelerator to accelerate the speed of processing of the frame.
 
-The main code is available in this code (test.cpp), so if you want to run the application program make sure that you have installed the opencv in your environment otherwise you will get an error due to the opencv library .
+The main code is available with this tutorial (test.cpp), so if you want to run the application program make sure that you have installed the opencv in your environment otherwise you will get an error due to the opencv library .
 
 If you have not install the opencv, go in the link below and follow the step to install OpenCV on ubuntu
 
