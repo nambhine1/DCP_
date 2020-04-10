@@ -18,7 +18,7 @@ After installation of the opencv library you can run the program using the follo
 
 
 
-1. >$  g++ test.cpp guidedfilter.cpp darkchannel.cpp airlight.cpp dcp.cpp recover.cpp transmission.cpp -o ./dehaze `pkg-config --libs --cflags opencv`
+1. >$  g++ test.cpp guidedfilter.cpp darkchannel.cpp airlight.cpp dcp.cpp recover.cpp transmission.cpp -o ../dehaze `pkg-config --libs --cflags opencv`
 
 
 2. >$ ./dehaze
