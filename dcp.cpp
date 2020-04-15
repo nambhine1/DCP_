@@ -30,17 +30,17 @@ void dehaze(IplImage *recover, IplImage *input)
 	CalcTransmission(transmission, input, Airlight, darkchannelradius);
 	t.toc();
 
-	t.tic();
+	/*t.tic();
 	printf("GuidedFilterColor...");
 
 
 	GuidedFilterColor(refine_transmission, input, transmission, 1e-6, 60);
 	// guidedFilter(cv::cvarrToMat(input), cv::cvarrToMat(transmission), cv::cvarrToMat(refine_transmission), 60, 1e-6);
-	t.toc();
+	t.toc();*/
 
 	t.tic();
 	printf("CalcRecover...");
-	CalcRecover(recover, input, refine_transmission, Airlight);	
+	CalcRecover(recover, input, transmission, Airlight);	
 	t.toc();
 
 	cvReleaseImage(&refine_transmission);
