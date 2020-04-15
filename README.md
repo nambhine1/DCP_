@@ -16,7 +16,7 @@ If you have not install the opencv, go in the link below and follow the step to 
 http://www.codebind.com/linux-tutorials/install-opencv-ubuntu-18-04-lts-c-cpp-linux/ 
 
 
-After installation of the opencv library you can run the program using the following comand  :
+After installation of the opencv library you can run the program using the following comand :
 
 
 
