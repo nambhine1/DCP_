@@ -105,8 +105,8 @@ int main(int argc, char** argv) {
     q.finish();
     printf("write output buffer\n");
     /////////////////////////////////////// end of CL /////////////////////
-
-    cv::imwrite("hls_out.png", out_img);
+	CalcRecover(recover, in_src, out_img, Airlight);	
+    cv::imwrite("hls_out.png", recover);
 
     std::vector<cv::Mat> bgr_planes;
     // call OpenCV function
