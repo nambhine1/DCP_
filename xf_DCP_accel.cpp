@@ -115,8 +115,7 @@ void channel_extract_accel(
     xf::cv::max<XF_8UC1,HEIGHT, WIDTH, XF_NPPC1>(imgOutput0, imgOutput1, imgOutput3);
     xf::cv::max<XF_8UC1,HEIGHT, WIDTH, XF_NPPC1>(imgOutput2, imgOutput3, imgOutput4);
     xf::cv::erode<XF_BORDER_CONSTANT, XF_8UC1, HEIGHT, WIDTH, XF_KERNEL_SHAPE, FILTER_SIZE, FILTER_SIZE, ITERATIONS, XF_NPPC1>(imgOutput4, imgOutput5,_kernel);
-    xf::cv::xfMat2Array<OUTPUT_PTR_WIDTH, XF_8UC1, HEIGHT, WIDTH, XF_NPPC1>(imgOutput5, img_gray); 
-   // xf::cv::equalizeHist<XF_8UC1, HEIGHT, WIDTH, XF_NPPC1>(imgOutput5, imgOutput5, imgOutput6);
-   // xf::cv::xfMat2Array<OUTPUT_PTR_WIDTH, XF_8UC1, HEIGHT, WIDTH, XF_NPPC1>(imgOutput6, img_gray);  
+    xf::cv::medianBlur<FILTER_SIZE, XF_BORDER_REPLICATE, XF_8UC1, HEIGHT, WIDTH, XF_NPPC1>(imgOutput5, imgOutput6);
+    xf::cv::xfMat2Array<OUTPUT_PTR_WIDTH, XF_8UC1, HEIGHT, WIDTH, XF_NPPC1>(imgOutput6, img_gray);  
 }
 }
