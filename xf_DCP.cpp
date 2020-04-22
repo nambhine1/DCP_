@@ -1,5 +1,6 @@
 
-
+#include "dcp_core.h"
+using namespace cv::ximgproc;
 #include "common/xf_headers.hpp"
 #include "xf_channel_extract_config.h"
 
