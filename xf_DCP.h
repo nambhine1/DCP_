@@ -1,7 +1,7 @@
 
 #ifndef _XF_CHANNEL_EXTRACT_CONFIG_H_
 #define _XF_CHANNEL_EXTRACT_CONFIG_H_
-
+#include "imgproc/xf_median_blur.hpp"
 #include "hls_stream.h"
 #include "ap_int.h"
 #include "common/xf_common.hpp"
