@@ -112,8 +112,8 @@ void channel_extract_accel(
     xf::cv::extractChannel<XF_8UC4, XF_8UC1, HEIGHT, WIDTH, XF_NPPC1>(imgInput0, imgOutput0, channel1);
     xf::cv::extractChannel<XF_8UC4, XF_8UC1, HEIGHT, WIDTH, XF_NPPC1>(imgInput1, imgOutput1, channel2);
     xf::cv::extractChannel<XF_8UC4, XF_8UC1, HEIGHT, WIDTH, XF_NPPC1>(imgInput2, imgOutput2, channel3);
-    xf::cv::max<XF_8UC1,HEIGHT, WIDTH, XF_NPPC1>(imgOutput0, imgOutput1, imgOutput3);
-    xf::cv::max<XF_8UC1,HEIGHT, WIDTH, XF_NPPC1>(imgOutput2, imgOutput3, imgOutput4);
+    xf::cv::min<XF_8UC1,HEIGHT, WIDTH, XF_NPPC1>(imgOutput0, imgOutput1, imgOutput3);
+    xf::cv::min<XF_8UC1,HEIGHT, WIDTH, XF_NPPC1>(imgOutput2, imgOutput3, imgOutput4);
     xf::cv::erode<XF_BORDER_CONSTANT, XF_8UC1, HEIGHT, WIDTH, XF_KERNEL_SHAPE, FILTER_SIZE, FILTER_SIZE, ITERATIONS, XF_NPPC1>(imgOutput4, imgOutput5,_kernel);
     xf::cv::medianBlur<FILTER_SIZE, XF_BORDER_REPLICATE, XF_8UC1, HEIGHT, WIDTH, XF_NPPC1>(imgOutput5, imgOutput6);
     xf::cv::xfMat2Array<OUTPUT_PTR_WIDTH, XF_8UC1, HEIGHT, WIDTH, XF_NPPC1>(imgOutput6, img_gray);  
